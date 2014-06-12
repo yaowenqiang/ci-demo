@@ -19,4 +19,8 @@ class Blog extends CI_Controller
     {
         echo "hello";
     }
+    public function _output()
+    {
+        echo "\ni am dying\n";
+    }
 }
