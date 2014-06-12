@@ -23,4 +23,14 @@ class Blog extends CI_Controller
     {
         echo "\ni am dying\n";
     }
+    /**
+     * i am private,you can't see me
+     *
+     * @return void
+     * @author Steve Francia <steve.francia@gmail.com>
+     */
+    private function _p()
+    {
+        echo 'private';
+    }
 }
