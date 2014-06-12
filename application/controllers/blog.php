@@ -19,10 +19,10 @@ class Blog extends CI_Controller
     {
         echo "hello";
     }
-    public function _output()
-    {
-        echo "\ni am dying\n";
-    }
+    //public function _output()
+    //{
+        //echo "\ni am dying\n";
+    //}
     /**
      * i am private,you can't see me
      *
@@ -32,5 +32,15 @@ class Blog extends CI_Controller
     private function _p()
     {
         echo 'private';
+    }
+    /**
+     * view test
+     *
+     * @return void
+     * @author Steve Francia <steve.francia@gmail.com>
+     */
+    public function viewme()
+    {
+        $this->load->view('testview');
     }
 }
